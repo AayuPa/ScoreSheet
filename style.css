@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1f1f1f; /* Slightly lighter dark shade for header */
+    padding: 1rem 0;
+    border-bottom: 3px solid #ADFF2F; /* Yellowish-green border */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ADFF2F; /* Yellowish-green title */
+    font-weight: 700;
+}
+
+header nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Simple transition */
+}
+
+header nav a:hover {
+    background-color: #ADFF2F; /* Yellowish-green background on hover */
+    color: #121212; /* Dark text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+main h2 {
+    color: #ADFF2F; /* Section titles in accent color */
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ADFF2F;
+    padding-left: 10px;
+}
+
+/* Match Card Styles */
+.match-list {
+    display: grid;
+    /* Adjust grid columns based on screen size if needed */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.match-card {
+    background-color: #1f1f1f; /* Dark card background */
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    border: 1px solid #333; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+    overflow: hidden; /* Prevents content spill */
+}
+
+.match-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(173, 255, 47, 0.2); /* Glow effect */
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.75rem;
+}
+
+.match-info .league {
+    font-weight: bold;
+}
+
+.match-info .status {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.match-info .status.live {
+    background-color: #e04040; /* Red for live */
+    color: white;
+}
+
+.match-info .status.finished {
+     background-color: #555; /* Grey for finished */
+     color: #ddd;
+}
+
+.match-info .minute {
+    font-weight: bold;
+    color: #ADFF2F; /* Accent color for time */
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.team {
+    text-align: center;
+    flex: 1;
+}
+
+.team-name {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    color: #e0e0e0;
+}
+
+.score {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ADFF2F; /* Accent color for score */
+}
+
+.vs {
+    font-size: 1rem;
+    color: #777;
+    margin: 0 1rem;
+}
+
+.stats-link a {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #ADFF2F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.stats-link a:hover {
+    color: #fff; /* Brighter on hover */
+}
+
+/* Statistics Overview Section */
+.stats-overview {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 1px solid #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f1f1f;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
